@@ -1,3 +1,39 @@
-/*body {*/
-/*    background-color: purple;*/
-/*}*/
+* {
+    background-color: #E6E6E6;
+    padding: 0;
+}
+.red-circle {
+    background: #E65E6B;
+    width: 5em;
+    height: 5em;
+    border-radius: 100em;
+    margin: .5em;
+    border: white solid .5em;
+}
+.orange-circle {
+    background: #EB9D3A;
+    width: 5em;
+    height: 5em;
+    border-radius: 100em;
+    margin: .5em;
+    border: white solid .5em;
+}
+.green-circle {
+    background: #7CB06C;
+    width: 5em;
+    height: 5em;
+    border-radius: 100em;
+    margin: .5em;
+    border: white solid .5em;
+}
+.blue-circle {
+    background: #00ABA9;
+    width: 5em;
+    height: 5em;
+    border-radius: 100em;
+    margin: .5em;
+    border: white solid .5em;
+}
+#red {
+    color: black;
+}

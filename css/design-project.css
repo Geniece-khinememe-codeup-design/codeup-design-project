@@ -9,7 +9,6 @@
     border-radius: 100em;
     margin: .5em;
     border: white solid .5em;
-    z-index: ;
 }
 .orange-circle {
     background: #EB9D3A;
@@ -58,6 +57,9 @@ img{
     max-width:100%;
     margin:auto;
 }
+/*.col col-sm col-md-6 col-lg-6 col-xl-6 {*/
+/*    */
+/*}*/
 
 .small-red-circle {
     background: #E65E6B;
@@ -95,15 +97,13 @@ img{
     background: transparent;
 }
 .small-circle{
-   margin: 3px;
-
+    margin: 3px;
 }
 
 .s-letter {
     position: relative;
     top:4px;
     right:16px;
-    /*width: 50%;*/
     text-align: center;
     font-size: 10px;
     font-weight:bold;
@@ -111,7 +111,51 @@ img{
     background: transparent;
     z-index: 0;
 }
+.left{
+    width:70%;
+    float:left;
+}
+.right{
+    width:30%;
+    float:right;
+}
+.title{
+    text-align: center;
+    margin: 2em;
+}
+.col-md-4 {
+    width: 100px;
+}
+.col-md-8 {
+    display: flex;
+    font-size: 5px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    margin-left: 5em;
+    padding: 10px;
+}
 
-/*.text-circle{*/
-/*    display:inline-block;*/
+/* to center flex-items */
+.flex-item {
+    margin: auto;
+}
+
+.media-image {
+    image-rendering: high-quality;
+    margin-top: 1em;
+    margin-left: 23px;
+}
+.col-md-9, .p {
+    margin-left: 23px;
+}
+
+/*.column {*/
+/*    float: end;*/
+/*}*/
+/*.title {*/
+/*    font-size: 12px;*/
+/*}*/
+/*.left {*/
+/*    float: left;*/
 /*}*/

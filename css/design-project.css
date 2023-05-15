@@ -7,7 +7,7 @@
     width: 5em;
     height: 5em;
     border-radius: 100em;
-    margin: .5em;
+    margin: 10px;
     border: white solid .5em;
 }
 .orange-circle {
@@ -15,7 +15,7 @@
     width: 5em;
     height: 5em;
     border-radius: 100em;
-    margin: .5em;
+    margin: 10px;
     border: white solid .5em;
 }
 .green-circle{
@@ -23,7 +23,7 @@
     width: 5em;
     height: 5em;
     border-radius: 100em;
-    margin: .5em;
+    margin: 10px;
     border: white solid .5em;
 }
 .blue-circle {
@@ -31,7 +31,7 @@
     width: 5em;
     height: 5em;
     border-radius: 100em;
-    margin: .5em;
+    margin: 10px;
     border: white solid .5em;
 }
 .circle{
@@ -39,11 +39,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 
     /*z-index: -1;*/
 
 }
-
 
 .text {
     position: relative;
@@ -125,28 +125,33 @@ img{
 }
 .col-md-8 {
     display: flex;
-    font-size: 3px;
+    font-size: 1px;
     flex-flow: row wrap;
     justify-content: space-between;
     margin-bottom: 1em;
-    margin-left: 5em;
+    margin-left: 2em;
     padding: 10px;
 }
 
 /* to center flex-items */
-.flex-item {
-    margin: auto;
-}
+/*.flex-item {*/
+/*    margin: auto;*/
+/*}*/
 
 .media-image {
     image-rendering: high-quality;
+    width: 70px;
+    height: 70px;
     margin-top: 1em;
     margin-left: 23px;
 }
 .col-md-9, .p {
     margin-left: 23px;
-    margin-right: 10px;
+
 }
+/*{*/
+/*font-family: 'Abel', sans-serif;*/
+/*}*/
 
 /*.column {*/
 /*    float: end;*/
@@ -158,20 +163,20 @@ img{
 /*    float: left;*/
 /*}*/
 
-@media screen and (max-width: 576px){
+@media screen and (min-width: 576px) and (max-width: 767px){
     .right {
         display: none;
     }
     h1{
         font-family: 'Anton', sans-serif;
-        font-size:40px;
+        font-size:65px;
         font-weight: bold;
         text-align: center;
         padding: 0.8em;
     }
     h2{
         font-family: 'Anton', sans-serif;
-        font-size:30px;
+        font-size:40px;
         font-weight: bold;
         text-align: center;
     }
@@ -179,7 +184,11 @@ img{
         display: none;
     }
     .circle{
-        margin: 1em 1em 1em 2em;
+        margin: 1em 2em 1em 4em;
+    }
+    ul li{
+        margin:0;
+        padding:0;
     }
 
     .left{
@@ -187,7 +196,7 @@ img{
     }
 
 }
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 991px){
     .right {
         display: none;
     }
@@ -214,8 +223,14 @@ img{
     .left{
         width:100%;
     }
+    .content{
+        margin: 0 4em;
+    }
+    hr{
+        margin: 0 4em;
+    }
 }
-@media screen and  (min-width: 769px){
+@media screen and (min-width: 992px) and (max-width: 1199px){
     h1{
         font-family: 'Anton', sans-serif;
         font-size:48px;
@@ -230,22 +245,44 @@ img{
         text-align: center;
     }
     .circle{
-        margin: 1em 0 1em 4em;
+        margin: 1em 0 1em 6em;
     }
     li{
         margin: 0;
         padding: 0;
     }
     .left{
-        width:60%;
+        width:70%;
         float:left;
     }
     .right{
-        width:40%;
+        width:30%;
         float:right;
     }
+    .content{
+        margin: 0 2em 0 4em;
+    }
+    hr{
+        margin: 0 6em;
+    }
+    .col-md-4{
+        margin-bottom: 4.5em;
+    }
+    .media-image {
+        margin-left: 35px;
+    }
+    .col-md-9, .p {
+        margin-left: 35px;
+        margin-top: 2em;
+        padding-right:0;
+
+    }
+
+    .left-four{
+        margin-top:7.5em;
+    }
 }
-@media screen and (min-width: 993px){
+@media screen and (min-width: 1200px){
     h1{
         font-family: 'Anton', sans-serif;
         font-size:60px;
@@ -259,19 +296,34 @@ img{
         font-weight: bold;
         text-align: center;
     }
-    .circle{
-        margin: 1em 1em 1em 3em;
-    }
+    /*.circle{*/
+    /*    margin: 1em 1em 1em 8em;*/
+    /*    paddding: 0 50px;*/
+    /*}*/
     li{
         margin: 0.5em;
     }
     .left{
-        width:70%;
+        width:60%;
         float:left;
     }
     .right{
-        width:30%;
+        width:40%;
         float:right;
+    }
+    .content{
+        margin: 0 0 0 5em;
+    }
+    hr{
+        margin: 0 6em;
+    }
+    .col-md-4{
+        margin-bottom: 1.5em;
+    }
+    .col-md-9{
+        margin-top: 1em;
+        padding-right:0;
+
     }
 
 }

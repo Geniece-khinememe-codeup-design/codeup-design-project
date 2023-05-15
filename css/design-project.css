@@ -311,6 +311,9 @@ img{
         width:40%;
         float:right;
     }
+    .container, .right {
+        justify-content: space-evenly;
+    }
     .content{
         margin: 0 0 0 5em;
     }

@@ -156,6 +156,7 @@ img{
 }
 .col-md-4 {
     width: 100px;
+    aspect-ratio: 1 / 1;
 }
 .col-md-8 {
     display: flex;
@@ -264,7 +265,7 @@ img{
         text-align: center;
     }
     .circle{
-        margin: 1em 0 1em 6em;
+        margin: 1em 0 1em 4em;
     }
     li{
         margin: 0;
